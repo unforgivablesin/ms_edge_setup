@@ -245,6 +245,7 @@ $script += @"
 "WebAppInstallForceList"=dword:00000000
 "WebAppSettings"=dword:00000000
 "WebContentFilteringBlockedCategories"=dword:00000000
+"LocalBrowserDataShareEnabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge\Recommended]
 "@
