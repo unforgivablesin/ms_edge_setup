@@ -1,25 +1,28 @@
 ﻿Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
-; Default Search Engine
-"DefaultSearchProviderEnabled"=dword:00000001
-"DefaultSearchProviderName"="BraveSearch"
-"DefaultSearchProviderSearchURL"="https://search.brave.com/search?q={searchTerms}"
 
-; Layout
-"NewTabPageLocation"="search.brave.com"
-"NewTabPageSearchBox"="redirect"
-"NewTabPageAllowedBackgroundTypes"=dword:00000003
-
-; Quantum Agreement
-"PostQuantumKeyAgreementEnabled"=dword:00000001
-
-; Security but telemetry
-"SmartScreenEnabled"=dword:00000000
-
+"ImportAutofillFormData"=dword:00000000
+"ImportBrowserSettings"=dword:00000000
+"ImportCookies"=dword:00000000
+"ImportExtensions"=dword:00000000
+"ImportHistory"=dword:00000000
+"ImportHomepage"=dword:00000000
+"ImportOnEachLaunch"=dword:00000000
+"ImportOpenTabs"=dword:00000000
+"ImportPaymentInfo"=dword:00000000
+"ImportSavedPasswords"=dword:00000000
+"ImportSearchEngine"=dword:00000000
+"ImportShortcuts"=dword:00000000
+"PasswordManagerEnabled"=dword:00000000
+"CryptoWalletEnabled"=dword:00000000
+"EdgeShoppingAssistantEnabled"=dword:00000000
+"EdgeWalletCheckoutEnabled"=dword:00000000
+"EdgeWalletEtreeEnabled"=dword:00000000
+"AudioSandboxEnabled"=dword:00000001
+"NetworkServiceSandboxEnabled"=dword:00000001
 "SplitScreenEnabled"=dword:00000000
 "EnableExperimentalPolicies"=dword:00000001
-"CryptoWalletEnabled"=dword:00000000
 "EnableMediaRouter"=dword:00000000
 "CookiesBlockedForUrls"="ntp.msn.com"
 "DefaultGeolocationSetting"=dword:00000002
@@ -40,7 +43,6 @@
 "EdgeManagementEnabled"=dword:00000000
 "MAMEnabled"=dword:00000000
 "NativeMessagingBlocklist"=""
-"PasswordManagerEnabled"=dword:00000000
 "PinBrowserEssentialsToolbarButton"=dword:00000000
 "InsecurePrivateNetworkRequestsAllowed"=dword:00000000
 "RelatedWebsiteSetsEnabled"=dword:00000000
@@ -56,7 +58,6 @@
 "AdsSettingForIntrusiveAdsSites"=dword:00000002
 "AllowBackForwardCacheForCacheControlNoStorePageEnabled"=dword:00000000
 "AlternateErrorPagesEnabled"=dword:00000000
-"AudioSandboxEnabled"=dword:00000001
 "AutoLaunchProtocolsComponentEnabled"=dword:00000000
 "AutofillAddressEnabled"=dword:00000000
 "AutofillCreditCardEnabled"=dword:00000000
@@ -72,7 +73,6 @@
 "DefaultBrowserSettingsCampaignEnabled"=dword:00000000
 "DefaultSensorsSetting"=dword:00000002
 "DefaultSerialGuardSetting"=dword:00000002
-"ConfigureDoNotTrack"=dword:00000001
 "DefaultShareAdditionalOSRegionSetting"=dword:00000002
 "DiagnosticData"=dword:00000000
 "Disable3DAPIs"=dword:00000001
@@ -80,34 +80,16 @@
 "Edge3PSerpTelemetryEnabled"=dword:00000000
 "EdgeCollectionsEnabled"=dword:00000000
 "EdgeEDropEnabled"=dword:00000000
-"EdgeShoppingAssistantEnabled"=dword:00000000
-"EdgeWalletCheckoutEnabled"=dword:00000000
-"EdgeWalletEtreeEnabled"=dword:00000000
 "EnableOnlineRevocationChecks"=dword:00000001
 "EncryptedClientHelloEnabled"=dword:00000001
-"EnhanceSecurityMode"=dword:00000002
 "ExperimentationAndConfigurationServiceControl"=dword:00000000
 "FamilySafetySettingsEnabled"=dword:00000000
-"ImportAutofillFormData"=dword:00000000
-"ImportBrowserSettings"=dword:00000000
-"ImportCookies"=dword:00000000
-"ImportExtensions"=dword:00000000
-"ImportHistory"=dword:00000000
-"ImportHomepage"=dword:00000000
-"ImportOnEachLaunch"=dword:00000000
-"ImportOpenTabs"=dword:00000000
-"ImportPaymentInfo"=dword:00000000
-"ImportSavedPasswords"=dword:00000000
-"ImportSearchEngine"=dword:00000000
-"ImportShortcuts"=dword:00000000
 "ImportStartupPageSettings"=dword:00000000
-"HideFirstRunExperience"=dword:00000001
 "HubsSidebarEnabled"=dword:00000000
 "InAppSupportEnabled"=dword:00000000
 "MicrosoftEdgeInsiderPromotionEnabled"=dword:00000000
 "MicrosoftEditorProofingEnabled"=dword:00000000
 "NetworkPredictionOptions"=dword:00000002
-"NetworkServiceSandboxEnabled"=dword:00000001
 "NewPDFReaderEnabled"=dword:00000000
 "PDFSecureMode"=dword:00000001
 "PromotionalTabsEnabled"=dword:00000000
@@ -130,7 +112,6 @@
 "SyncDisabled"=dword:00000001
 "TabServicesEnabled"=dword:00000000
 "TextPredictionEnabled"=dword:00000000
-"TrackingPrevention"=dword:00000003
 "TranslateEnabled"=dword:00000000
 "UploadFromPhoneEnabled"=dword:00000000
 "WebRtcLocalhostIpHandling"="DisableNonProxiedUdp"
@@ -179,10 +160,31 @@
 "ReportingEndpoints"=dword:00000000
 "OnlyOnPremisesImplicitSigninEnabled"=dword:00000000
 "UrlKeyedMetricsAllowed"=dword:00000000
-"WebAppInstallForceList"=dword:00000000
-"WebAppSettings"=dword:00000000
 "WebContentFilteringBlockedCategories"=dword:00000000
-"WindowsHelloForHTTPAuthEnabled"=dword:00000000
-"TyposquattingCheckerEnabled"=dword:00000000
+"HideFirstRunExperience"=dword:00000000
+"SpellcheckEnabled"=dword:00000000
+"BuiltInDnsClientEnabled"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge\Recommended]
+
+; Default Search Engine
+"NewTabPageLocation"="about:blank"
+"DefaultSearchProviderEnabled"=dword:00000001
+"DefaultSearchProviderName"="BraveSearch"
+"DefaultSearchProviderSearchURL"="https://search.brave.com/search?q={searchTerms}"
+"NewTabPageSearchBox"="redirect"
+"NewTabPageAllowedBackgroundTypes"=dword:00000003
+
+; Microsoft Safety features
+"SmartScreenEnabled"=dword:00000000
+"SmartScreenPuaEnabled"=dword:00000000
+"TyposquattingCheckerEnabled"=dword:00000000
+"ScarewareBlockerProtectionEnabled"=dword:00000000
+
+; Security Settings
+"EnhanceSecurityMode"=dword:00000002
+"TrackingPrevention"=dword:00000003
+
+; General
+"ConfigureDoNotTrack"=dword:00000001
+"LocalBrowserDataShareEnabled"=dword:00000001
