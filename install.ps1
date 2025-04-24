@@ -1,7 +1,7 @@
 $filePath = "CustomPolicy.reg"
 $script = @"
-Windows Registry Editor Version 5.00
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+Windows Registry Editor Version 5.00`n
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]`n`n
 "@
 
 Write-Host "Which search engine would you like to be default?`n(1) Google`n(2) DuckDuckGo`n(3) Brave Search"
