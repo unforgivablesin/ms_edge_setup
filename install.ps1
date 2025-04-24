@@ -41,12 +41,12 @@ $securityFeatures = Read-Host "Would you like to enable Microsoft Security featu
 if ($securityFeatures -ieq "y" -or $securityFeatures -ne "n") {
     $script += """SmartScreenEnabled""=dword:00000001`n"
     $script += """ScarewareBlockerProtectionEnabled""=dword:00000001`n"
-    $script += """TyposquattingCheckerEnabled""=dword:000000001`n"
+    $script += """TyposquattingCheckerEnabled""=dword:00000001`n"
     $script += """WindowsHelloForHTTPAuthEnabled""=dword:00000001`n"
 } else {
     $script += """SmartScreenEnabled""=dword:00000000`n"
     $script += """ScarewareBlockerProtectionEnabled""=dword:00000000`n"
-    $script += """TyposquattingCheckerEnabled""=dword:000000000`n"
+    $script += """TyposquattingCheckerEnabled""=dword:00000000`n"
     $script += """WindowsHelloForHTTPAuthEnabled""=dword:00000000`n"
 }
 
