@@ -1,7 +1,13 @@
 ﻿Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+; Default Search Engine
+"DefaultSearchProviderEnabled"=dword:00000001
+"DefaultSearchProviderName"="BraveSearch"
+"DefaultSearchProviderSearchURL"="https://search.brave.com/search?q={searchTerms}"
 
+; Layout
+"NewTabPageLocation"="search.brave.com"
 "NewTabPageSearchBox"="redirect"
 "NewTabPageAllowedBackgroundTypes"=dword:00000003
 

@@ -97,6 +97,7 @@ if ($importSettings -ieq "y") {
 }
 
 $script += @"
+"DefaultSearchProviderEnabled"=dword:00000001
 "NewTabPageSearchBox"="redirect"
 "NewTabPageAllowedBackgroundTypes"=dword:00000003
 "SplitScreenEnabled"=dword:00000000
